@@ -4,7 +4,6 @@ class City:
         self.number = num
         self.roads = []
 
-    def addRoad(self, goalCity):
-        self.roads.append(goalCity);
+    def addRoad(self, road):
+        self.roads.append(road);
 
-    
