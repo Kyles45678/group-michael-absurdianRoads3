@@ -75,6 +75,7 @@ def print_and_remove_loops(citiesDic, startCityKey):
                 print(citiesDic[curKey].num, adC.num)
                 break;
 
+    #TODO minimum spanning tree
 
     for i in range(len(citiesDic[startCityKey].connectedCities)):
         adC = citiesDic[curKey].connectedCities[i]
@@ -118,15 +119,15 @@ def main():
 
     print_and_remove_leaves(citiesDic)
 
-    cityKeysAsArray = []
-    for k in citiesDic.keys():
-        cityKeysAsArray.append(k)
+    #cityKeysAsArray = []
+    #for k in citiesDic.keys():
+    #    cityKeysAsArray.append(k)
 
     #for i in citiesDic:
     #    print(citiesDic[i].toString())
 
-    for ki in cityKeysAsArray:
-        print_and_remove_loops(citiesDic, ki)
+    #for ki in cityKeysAsArray:
+    #    print_and_remove_loops(citiesDic, ki)
         #for i in citiesDic:
         #    print(citiesDic[i].toString())
 
