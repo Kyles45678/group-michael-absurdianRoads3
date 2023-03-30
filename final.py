@@ -46,7 +46,7 @@ def print_and_mark_leaves(cities):
 
 def print_and_mark_loops(cities, start_city_index):
     loopCities = [start_city_index]
-    lastCityIndex = None;
+    lastCityIndex = None
 
     while len(loopCities) > 0:
         curCityIndex = loopCities.pop()
@@ -95,7 +95,7 @@ def main():
 
     # print("leafs", cities)
 
-    for i in range(num_cities):     # we use this for loop to eliminate nested loops
+    for i in range(num_cities):     # we use this for loop to eliminate multiple loops
         if not cities[i].visited:
             print_and_mark_loops(cities, i)
 
