@@ -95,18 +95,8 @@ class Graph:
             print("%d -- %d == %d" % (u, v, weight))
         print("Minimum Spanning Tree", minimumCost)
 
+        print(result)
 
-# Driver code
-if __name__ == '__main__':
-    g = Graph(4)
-    g.addEdge(0, 1, 10)
-    g.addEdge(0, 2, 6)
-    g.addEdge(0, 3, 5)
-    g.addEdge(1, 3, 15)
-    g.addEdge(2, 3, 4)
-
-    # Function call
-    g.KruskalMST()
 
 def main():
     num_cities = int(input())
@@ -117,8 +107,9 @@ def main():
         connection_line = input().split(" ")
         a = int(connection_line[0])
         b = int(connection_line[1])
-        g.addEdge(a, b, 1)
+        g.addEdge(a - 1, b - 1, 1)
 
     print(g.KruskalMST())
+
 
 main()
